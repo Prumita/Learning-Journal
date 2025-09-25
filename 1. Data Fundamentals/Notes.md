@@ -1,5 +1,5 @@
-#Data Fundamentals
-##Intro
+# Data Fundamentals
+## Intro
 During this course we are going to look at waterfall and agile methodologies, as well as lean sigma 6.
 
 There's a lovely pyramid that shows that we are really integral to data work, getting all the data in place and ready for other people to use.
