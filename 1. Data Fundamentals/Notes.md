@@ -7,6 +7,7 @@ There's a lovely pyramid that shows that we are really integral to data work, ge
 Also there's a nice diagram of actionable insight, and how it is a cycle. So starting a data, we move to infomation, then insight, then decision, then action. 
 The idea there is that the action leads to more data, so it's a cycle.
 
+## Types of data 
 There are five Vs in the data framework:
 
 **Volume** - How much data do we have
@@ -19,7 +20,12 @@ There are five Vs in the data framework:
 
 **Value** - How much worth can we derive from the data. 
 
-Sizes of data:
+##Qualiative and Quantitive Data
+
+**Quantitive** data is numerical data that you can aggregate, it's your quantities
+**Qualitative** data is non-numerical, it could be categorical, it could be text strings, product names etc.
+
+## Sizes of data
 + Bit
 + Byte
 + Kilobyte
@@ -28,3 +34,7 @@ Sizes of data:
 + Terabyte
 + Exabyte
 + Zetabyte
+
+## Reflections
+
+Good intro to data fundamentals.
