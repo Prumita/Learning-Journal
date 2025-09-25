@@ -8,10 +8,15 @@ Also there's a nice diagram of actionable insight, and how it is a cycle. So sta
 The idea there is that the action leads to more data, so it's a cycle.
 
 There are five Vs in the data framework:
+
 **Volume** - How much data do we have
+
 **Variety** - What sort of data do we have
+
 **Velocity** - How quickly do we receive that data
+
 **Veracity** - How accurate is the data, how trustworthy is it
+
 **Value** - How much worth can we derive from the data. 
 
 Sizes of data:
