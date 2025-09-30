@@ -10,7 +10,7 @@ MeEtadata is really key to understanding data and driving good data quality. Whi
 But I think maybe for GCP they're really striving towards it.
 
 # Measuring Data Quality
-##Accuracy
+## Accuracy
   How well does our data reflect the real world? Are false items likely?
 
 ## Integrity
