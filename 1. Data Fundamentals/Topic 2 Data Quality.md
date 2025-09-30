@@ -24,3 +24,69 @@ But I think maybe for GCP they're really striving towards it.
 
 ## Reliability
   Is the data consistently accurate over tiem? Can the data be depended upon to make critical decisions?
+
+# Open Standards
+
+Might have to deal with all types of information from all different places and external sources. So need everyone to have the same level playing field. 
+
+- F indable
+- A ccessible
+- I nteroperable
+- R eusable
+
+Asked how can we make sure differnt things can communicate. Ideas for that
+- Metadata and Data cataloging
+- Unique identifiers
+- search tools and indexing
+- standarsiation of naming conventions
+- access control and security
+- data formats and standards
+- apis for data exchange
+- semantic interoperability
+- data integration tools
+- data standards and traiing
+
+## Dublin Core Metadata Initiative
+
+Standardise the world wide web. Someone has to come along and say we need to set a standard by which we all abide to. Certain attributes that describe the information we're looking at to make it easier.
+UK data service. Providing a wide range of social and economic population data. Government data option.
+Open banking standards. Share information between banks an third parties. Make it easier for banks to understand about indivuals and also for us to understad about ourselves.
+
+Remove the nasty formatting. 
+
+# Data Stewardship
+
+Assign roles for ensuring data accuracy, completeness and reliability. Who owns the data? Who is responsible for the overall project itself? Who is there to ensure that the actual data quality is up to scratch?
+
+## Focus on sustainabiity
+
+Avoid Data Duplication
+Lean data management
+Rationalising data storage
+Data lifecycle management
+
+## Data Quality Management Beyond Data Stewardship
+
+Some tools I've never heard of! Semantic validity models?
+RDF Resource Description Framework
+SPARQL
+OWL (Web Ontology Language)
+
+Consistent use of vocabularies and ontologies ensures adherence to predefined terms and definitions
+Enhances interoperability and semantic clarity of data
+Enables effective communication and interpretation across different systems and stakeholders
+
+Off scope for this particular course.
+
+DMAIC!
+D efine
+M easure
+A nalyse
+I mprove
+C ontrol
+
+Used to do this at the beginning of MBNA, who knew it'd be in an official thing.
+
+Have a look for opportunities for shadowing in the business. Find someone who is an adjacent team, or more senior within team. Utilise for a bit of expertise. 
+
+  
