@@ -85,7 +85,7 @@ Deployment architecture diagram
 ### Integration architecture diagram
 so I think there's a lens on a couple of bits here, API Management and Workflow and orchestration.
 I think the layer might be backend systems? Not sure
-![Integration Diagram](https://github.com/Prumita/Learning-Journal/blob/main/Screenshots/1.4.Integration_architecture_diagram.png)
+![Integration Diagram](https://github.com/Prumita/Learning-Journal/blob/main/Screenshots/1.4.Integration_Architecture_Diagram.png)
 
 
 ### Deployment architecture diagram
@@ -106,5 +106,5 @@ So everything in this diagram isgoing between everything else which is interesti
 Good discussion over this vs data silo. Basically it's similar to a data silo but the idea is that actually things are on a shared system, so for example GCP, and sharing would be possible/easy if needed. So aligned in terms of accessibility, but separate areas are experts of those areas.
 Silos, might be on completely different systems, might just be impossible or extremely difficult to share between areas.
 
-
+![Data mesh framework](https://github.com/Prumita/Learning-Journal/blob/main/Screenshots/1.4.Data_Mesh_Framework.png)
 
