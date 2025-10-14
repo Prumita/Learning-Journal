@@ -98,3 +98,13 @@ Not sure, bit confused in the middle there.
 ### Data architecture diagram
 So most similar to what we do at the minute, like something Robbie would do. High level of where data comes from and goes to.
 
+# Data Mesh
+Data Mesh is the concept of where data is managed centrally. Removes central management of data within organization. Allows each unit within an organization to manage their own data. Domain driven. e.g. finance, production, logistics. 
+Why is the data mesh philosophy, why is it being pushed rather than ahving the data managed centrally? 
+
+So everything in this diagram isgoing between everything else which is interesting.
+Good discussion over this vs data silo. Basically it's similar to a data silo but the idea is that actually things are on a shared system, so for example GCP, and sharing would be possible/easy if needed. So aligned in terms of accessibility, but separate areas are experts of those areas.
+Silos, might be on completely different systems, might just be impossible or extremely difficult to share between areas.
+
+
+
