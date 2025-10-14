@@ -171,6 +171,24 @@ That seems really odd to me.
 Dr Robert Charette in 1993 introduced the concept of optimising efficiency.
 12 principles of lean software development.
 
-  
+Collaborative data workflow
+CRISP-DM
+
+Starts with business understanding. They have a problem they want to use data science to solve.
+Customers are churning. End of their policy or subscription they don't renew it. 
+Business wants to use the data science team to come up with a solution. Can we predict who is likely to leave and then offer them incentives? Can we identify why they are leaving?
+Data understanding. What data can we use to sort this business problem? 
+It looks very similar basically, business understanding ot data understanding to data prep to modelling to evaluation and then back to more business understanding or deployment. 
+The thing here is that that cycle happens many times maybe by itself, but just to provide a baseline model. Then you might move alone to a refined model, but then do mre. That's what the diagram seems to be sayuing.
+
+  # Scientific Method into data projects
+  Anothe cycle that goes around, but it looks like this
+  Make Observations
+  Think of INteresting Questions
+  Formulate Hypotheses
+  Develop Testable Predictions
+  Gather Data to Test Predictions (might then need to refine, alter, expand these and go back to develop)
+  Otherwise make theoreis.
+
   
 
