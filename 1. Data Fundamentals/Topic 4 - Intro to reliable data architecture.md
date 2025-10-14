@@ -89,7 +89,7 @@ I think the layer might be backend systems? Not sure
 
 
 ### Deployment architecture diagram
-![Deployment Diagram](https://github.com/Prumita/Learning-Journal/blob/main/Screenshots/1.4.Deployment_architecture_diagram.png)
+![Deployment Diagram](https://github.com/Prumita/Learning-Journal/blob/main/Screenshots/1.4.Deployment_Architecture_Diagram.png)
 
 Shows gitHub, Jenkins, sending to Kubernetes I think, then of to Docker.
 Not sure, bit confused in the middle there.
