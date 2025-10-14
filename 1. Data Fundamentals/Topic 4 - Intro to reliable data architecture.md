@@ -30,5 +30,7 @@ Design focuses on How and Where, might not show the 'what' exactly because we're
 Architecture focuses on Where and What but not the details of 'How'
 The lecturer thinks these are wrong but I feel like that makes sense to me?
 
+Example diagram hopefully:
+![alt text](https://github.com/Prumita/Learning-Journal/blob/main/Screenshots/1.4.ArchitectureDiagram.png?raw=true)
 
     
