@@ -33,4 +33,6 @@ The lecturer thinks these are wrong but I feel like that makes sense to me?
 Example diagram hopefully:
 ![Architecture Diagram](https://raw.githubusercontent.com/Prumita/Learning-Journal/main/1.4.ArchitectureDiagram.png)
 
+and some basic flowcharts here:
+![Flowchart icons Diagram](https://github.com/Prumita/Learning-Journal/blob/main/Screenshots/1.4.Flowchart_Symbols.png)
 
