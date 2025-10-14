@@ -75,11 +75,26 @@ Tips for diagrams
 so I think they mean drawing around different chunks of the diagram to try and split things out and group things up.
 Example has a layer and then the structure has changed because 2 layers have become one in effect. Or something,
 
-# Other diagrams!
+## Other diagrams!
 Data architecure diagram
 Application architecture diagram
 Integration architecture diagram
 DevOps architecture diagram
 Deployment architecture diagram
 
+### Integration architecture diagram
+so I think there's a lens on a couple of bits here, API Management and Workflow and orchestration.
+I think the layer might be backend systems? Not sure
+![Integration Diagram](https://github.com/Prumita/Learning-Journal/blob/main/Screenshots/1.4.Integration_architecture_diagram.png)
+
+
+### Deployment architecture diagram
+![Deployment Diagram](https://github.com/Prumita/Learning-Journal/blob/main/Screenshots/1.4.Deployment_architecture_diagram.png)
+
+Shows gitHub, Jenkins, sending to Kubernetes I think, then of to Docker.
+Not sure, bit confused in the middle there.
+
+
+### Data architecture diagram
+So most similar to what we do at the minute, like something Robbie would do. High level of where data comes from and goes to.
 
