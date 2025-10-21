@@ -1,0 +1,88 @@
+Going to use SQL Lite to learn things
+
+## Data Storage Options
+
+### Fileystems
+- Text data
+- Binary Data
+
+Very simple, very structured. 
+
+### RDBMPS (SQL)
+- Local
+- Remote
+
+Remote benefits. Having remote based system, can access from multiple systems. Multiple users, access management etc. Diversify beyond a local sstem.
+Bridge into cloud.
+
+### Non-relational databases (NoSQL)
+Favouralbe for non-relational database systems.
+If our relational database management sytems use SQL. Then we have a varient of that for non-relational databases. NoSQL. 
+It's not say there is No SQL, what it means is there is not only SQL. Don't need to always use a SQL based syntax to access the data. Can be structured, but in a different way. So think of a document store. So not a word document, but a document as in a collection of information. Normally contained in a JSON format.
+Key value store, reallygood for accessing quick information where we have a key and some information to go along with it.
+Document store doesn't tend to have a key, might have a tag but that's it.
+Nearest to SQL storage is column family stores (parquet??). Traditionally we store by row. Flip it, store by columns. Really good if you've got a sparse dataset, if you've got lots of potentially empty gaps. Column based is much better for storage than row based.
+Social media. Facebook, Instagram, TikTok. Facebook has friend requests. Not connected with someone, no relationship. If you have a friend request and accept then there is a link. 
+
+## Smidge of Powershell
+
+$directory = "C:\"
+
+Is creating a variable called directory. So we've given it an initial value.
+
+Get-ChildITem -Path $directory - Directory | ForEach-Object {
+    $folder = $_
+    $totalSize = (Get-ChildItem -Path $_.FullName -File | Measure-Object -Property Length -Sum).sum/1MB
+  "{0} has a total size of {1:N2} MB" -f $folder.Name, $totalSize
+  }
+
+
+So what we're seeing here, directory is the parent, so child item is all of the items within the directory (So C based on the variable), So for each item we're pulling the path out.
+So the foreach-object is a loop.
+Create another folder variable that is apparently nasty to explain so he isn't. This is a dummy variable. For each object $_ is the item we're currently looking at.
+So the total size but is looking at the name of the particular item, then it's measuring it and finding the length. Then it's printing the result.
+
+
+## Unicode
+
+UTF8 is suggested as encoding if there's a simple english language. But if you've got more complex language, or multiple languages, you may want to choose a higher number of encoding. So UTF-16 is not as well as stored. 
+
+Hexidecimal. We tend to count in 10s. So 0-9 is there, then 10. So think like an abacus.
+Hex and decimal means we count in 16. So 0-9, then use 6 letters, abcdef and that goes to 16. So then we go 0-15 and then go into a new column.
+
+So UTF-8 we see hexidecimal:
+41 = A, CE A9 = Omega, 42 = B.
+
+Then next level of encoding, UTF-16.
+00 41. 03 A9. 00 42.
+
+UTF-32 is a lot more padding:
+00 00 00 41. 00 00 03 A9. 00 00 00 42.
+
+## MIME types
+
+## Types of cloud storage
+### Block Storage
+Take our data, divide it into chunks. So original data is the full lego model, deconstruct it into different parts and store them separately, then have an identifier so they can be linked back together. Similar but not the same as how local storage on our PC might work.
+
+### File storage.
+So backups are great here. Stored as files.
+
+### Object storage?
+I think we skipped?
+
+Cloud storage in general has evolved. Cloud storage is actually 20 years old. Some of the original solutions may have been 2005/6 when AWS kicked off.
+Back then it was about storing and structured data sets. Moved away from classic data storage to a data lake.
+Data lake is a lake, raw in its natural format.
+Data warehouse is refined, piped into a management format.
+
+So got a diagram here! Looking lovely.
+Data warehouse - can only handle structured data, so you're losing lots of info.
+
+Data lake then allows all data, so structured, semi structured and unstructured. Datwarehouseing can still come along and pull from the data lake, but also data science can happen and machine learning can happen.
+
+Data Lakehouse
+So got the data lake at the bottom still. 
+Then we have a semantic layer he's just called it. MEtadta and governance layer. Apparetly similar to data bricks.
+Semantic layer then lets you do all the BI, Reports, Dta Science and MAchine learning to it. I'm not sure what that semantic layer truly is.
+
