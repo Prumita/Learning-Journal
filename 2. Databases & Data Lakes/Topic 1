@@ -86,3 +86,5 @@ So got the data lake at the bottom still.
 Then we have a semantic layer he's just called it. MEtadta and governance layer. Apparetly similar to data bricks.
 Semantic layer then lets you do all the BI, Reports, Dta Science and MAchine learning to it. I'm not sure what that semantic layer truly is.
 
+### Schema
+So I'm used to thinking about that in SQL terms but it's kinda like a high level design of something?
