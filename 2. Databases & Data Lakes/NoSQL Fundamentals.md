@@ -120,12 +120,14 @@ Great if you just want to search for one specific record.
 Not so great if you want to do complicated queries, aggregations etc.
 Terminology
 
-|SQL | No SQL |
+|SQL|No SQL|
 |------|---------|
-| Database | Database |
-| TAble | Collection |
-| Row | document |
-| Column | field |
-| index | index |
+|Database|Database|
+|Table|Collection|
+|Row|Document|
+|Column|Field|
+|Index|Index|
 
 Max document size of 16MB. 
+
+Uses binary JSON. It's slightly different to JSON. Exactly the same structure as JSON. Saved in a computer readable format. Enhances the speed. Means more data types can be stored. Includes length prefixs which can help with the searching of particular terms. Slightly larger than JSON Files due to extra metadata but performance gains make it worthwhile.
