@@ -3,7 +3,7 @@ This is awesome for me, I always thought it was literally No SQL. I mean, that's
 Oh well, so yeah, it's for semi-structured and un-structured data. But frm that eventually you might be generating some structured data you want to do deep analysis on, so there's still a place for SQL!
 
 So we're seeing a json reminder here, wonder if I can put it in a code block...but for nwo let's write it out
-
+```
   {
     "doorsWindows": [
       {
@@ -29,7 +29,7 @@ So we're seeing a json reminder here, wonder if I can put it in a code block...b
         }
       ]
     }
-
+```
 
 { = Curly brackets indicate storage of information in key value pairing. Square backets are a list of items grouped together.
 [ = square or brace bracket
