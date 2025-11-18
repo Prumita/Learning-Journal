@@ -35,3 +35,4 @@ So we're seeing a json reminder here, wonder if I can put it in a code block...b
 [ = square or brace bracket
 ( = round bracket.
 
+So can see here how A and B are structured slightly differently. Relational database would require these to have lots of individual columns with nulls to hold all the options. As we can see above, can just hold custom key value pairs for each doorsWindows entity.
