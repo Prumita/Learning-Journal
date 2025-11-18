@@ -119,8 +119,9 @@ Great if the schema is unclear. Potentially changing schemas, or we don't know t
 Great if you just want to search for one specific record.
 Not so great if you want to do complicated queries, aggregations etc.
 Terminology
+
 |SQL | No SQL |
----------------
+|------|---------|
 | Database | Database |
 | TAble | Collection |
 | Row | document |
