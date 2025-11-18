@@ -151,4 +151,10 @@ db.users.find({'last_name': 'Smith'})
 And missed the rest of that.
 Let's just have a go!
 
+OKay he had a go and George threw up so need to go back to recording for that.
+
+NLP Pipeline. Natural Language processing.
+Tokenisation of that, so Sarah Burrows chatted about this I think, so coming up with words, phrases etc, identifying things that might suggest vulnerability and so on.
+
+
 
