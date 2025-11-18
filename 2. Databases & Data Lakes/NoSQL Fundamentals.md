@@ -105,4 +105,26 @@ But apparently graphs are great at sorting that.
 Kinda reminds me of the algorithm thngs I did in Uni, but I guess it's not actually like that at all.
 Got nodes, and relationships between those nodes.
 Can be used for recommendation systems. So think in a classic table, if you wanted to join customers to products to try and find out which customers are buying what and what else have htey bought, but with a graph database that would be great, just links between customers and the products they bought and nothing else. So then you could see that 100 customers but item 1 and 75 of them also bought item 2, so maybe the other 25 want item 2 and just don't know about it yet.
-  
+He's mentioned maps twice, so I wonder if Waze, google maps etc actually use these to find out how to go places? Not sure. I mean that really is the algorithm thing I used to do.
+
+### MongoDB
+
+What is a document?
+It is like an observation, like a row in a classic table, instead here is a document. It's a NoSQL equivalent of a row.
+We then call a collection, a grouping of documents, so kinda like your table.
+It is not a word document, a pdf, or anything like that. It's like the JSON above. 
+
+So why use it?
+Great if the schema is unclear. Potentially changing schemas, or we don't know that they'll change.
+Great if you just want to search for one specific record.
+Not so great if you want to do complicated queries, aggregations etc.
+Terminology
+|SQL | No SQL |
+---------------
+| Database | Database |
+| TAble | Collection |
+| Row | document |
+| Column | field |
+| index | index |
+
+Max document size of 16MB. 
