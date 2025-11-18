@@ -131,3 +131,24 @@ Terminology
 Max document size of 16MB. 
 
 Uses binary JSON. It's slightly different to JSON. Exactly the same structure as JSON. Saved in a computer readable format. Enhances the speed. Means more data types can be stored. Includes length prefixs which can help with the searching of particular terms. Slightly larger than JSON Files due to extra metadata but performance gains make it worthwhile.
+
+|SQL Statement|MongoDB Commands|
+|---|---|
+|Select * from Table|db.collection.find()|
+|Select * from Table where artist = 'Nirvana'|db.collection.find({Artist:"Nirvana"})|
+|Select * from table order by Title|db.collection.find().sort(Title:1)|
+|distinct|.distinct()|
+|group by|.group()|
+
+And a last one I missed.
+
+Some example code:
+```
+db.users.find({'last_name': 'Smith'})
+// retrieve ssn field for documents where last_name == 'Smith':
+```
+
+And missed the rest of that.
+Let's just have a go!
+
+
