@@ -36,3 +36,14 @@ So we're seeing a json reminder here, wonder if I can put it in a code block...b
 ( = round bracket.
 
 So can see here how A and B are structured slightly differently. Relational database would require these to have lots of individual columns with nulls to hold all the options. As we can see above, can just hold custom key value pairs for each doorsWindows entity.
+
+Going back to SQL we're saying that a relational database is not called because of the relationships between the tables but because the tables themselves are relations? Or something? 
+
+So NoSQL databases are typically
+- Non-relational
+- Open source
+- cluster friendly
+- built from the ground-up to handle 21st centrury data challanges
+- schema-less
+
+  
