@@ -1,0 +1,9 @@
+Linux is good for performance, it is open source, and Walmart use it!
+
+Lots of commands for Linux, everything starts at /root.
+
+/bin means binary executibles.
+
+/sbin is system executibles.
+
+Other mount points are /media or /mnt. Directory that allows you to access additional files. So you can think you might put a usb in, then say where that usb is accessible, specify a directory for it. But not just physiucal things like that, could be shared drives etc as well.
