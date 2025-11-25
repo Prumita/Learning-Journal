@@ -30,7 +30,7 @@ rwx is read, write and execute for owner of the file.
 use chmod to amend the permissions on the file.
 
 |Command|Description|
----------------------
+|----------|-----------|
 |cd, change directory | cd .., cd -, cd ~ /mydir, cd /home/usman, cd|
 |su| Swtich user, su - (complete user environment)|
 | passwd| change password|
