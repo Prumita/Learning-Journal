@@ -1,5 +1,7 @@
 Linux is good for performance, it is open source, and Walmart use it!
 
+Linux is case sensitive.
+
 Lots of commands for Linux, everything starts at /root.
 
 /bin means binary executibles.
@@ -43,3 +45,16 @@ use chmod to amend the permissions on the file.
 |df, disc space usage| df-h|
 |du, file space usage|Du - sh|
 |uname, print system info| uname [-a, -s, -n, -r, -v, -m]|
+
+cd is used for changing directories.
+cd.. goes back up a directory
+cd- shortcut for $OLDPWD, which would let you go back to previous working directory
+cd take you to your home directory.
+
+su switch user
+
+--help or -h to get help.
+
+rm - r would remove a directory containing all of the files.
+
+
