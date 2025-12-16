@@ -24,3 +24,13 @@ So for this example, our class is a Car.
 So it has key attributes, colour, make, miles per gallon etc.
 Behaviours are things it can do. So a car can brake, accelerate, start, change gear etc. Its an action or a function. Something you do with it.
 So we define all the ays a car could be and that's the class. Then we make a specific object, and that's a specific instance of that class. So a specific car, I could use the car class to create Maximus. Bit like having a stored procedure, and hten a task being a particular instance of that stored procedure being called.
+Maximus, our instance, will inherit all the behaviour etc from the car class, so he can drive, brake etc without needing to restate that.
+Got an example here of class Employee. Defined within are the attributes and then the methods. So a method is showin with brackets.
+So diagram is like
+|class Employee|
+|----------------|
+|+Name|
+|+NI Number|
+|+Salary|
+| |
+|+PaySalary()|
