@@ -46,7 +46,7 @@ Idea is a method can manipulate or use the field data of the object. Stored proc
 |PRoperties| the data held by an object|
 
 __init__ is a constructor. It's the first method that gets called. It's the first thing that is defined and sets up your instance. self creates an instance. Instance of whatever it is we're using, so we're using a class. Passing in an instance of self, passing in key attributes, then make, model, year, colour
-
+```
 class Car:
   def __int__(self, make, model, year, color):
     self.make = make
@@ -67,7 +67,7 @@ my_car = Car("Toyota","Corolla",2022,"Blue")
 
 # Starting the engine of the car
 my_car.start_engine()
-
+```
 So the self thing I think is becuase we are referencing the self, so when it's used, it'll make an instance, and that instance will reference itself.
 Then we make my_car, which is an instance of the car class. That will then inherit the method that was defined in the class.
 
