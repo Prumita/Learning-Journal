@@ -72,3 +72,58 @@ So the self thing I think is becuase we are referencing the self, so when it's u
 Then we make my_car, which is an instance of the car class. That will then inherit the method that was defined in the class.
 
 Notice at the top that the parameters in brackets are for all the values that don't have a default. engine_status is given a default of false, so it is optional in the top and does not need to be included in the brackets.
+
+Another example of class!
+```
+#Employee class encapsulates properties and methods
+# of "employee" objects: could be used for a HR Application
+class Employee:
+  #__init__ constructor - a "dunder method"
+  # which "initialises" an object when a new instance
+  # of a class is created, by setting its properties
+  def __init__(self, name, ni_number):
+    self.name = name
+    self.ni_number = ni_number
+    self.salary = 0
+    self.department = 0
+```
+a "dunder method" is a specific, special way to write it so Python knows it's a special python method. Initialises a new instance of an object.
+
+So that's initially setting us up, so we're going to then create an instance. Which apparently can be called instanciating a particular object of the class.
+
+So we've only got the constructor, the init, which we set up our properties in. And then we can seperately define methods:
+
+```
+  def set_salary(self, salary_amount):
+    self.salary = salary_amount
+  def set_department(self, department):
+    self.department = department
+```
+
+Sorry lost the thread there a bit. But we can obviously make these things more complicated and we can put restrictions on it.
+So we can use if, else if etc to check the minimum and only set it if it meets the criteria to stop naff stuff being passed in.
+
+Static Class Members! So where are the min and max salaries going to come from?
+
+```
+So we can go:
+class Employee:
+  # static members - allows us to set min and max salaries
+  min_salary = 12000
+  max_salary = 110000
+```
+
+This is in the class, not the constructor, so it's in every single instance of that class. There is a hard coded value for everyone. The constructor is about how a particular instance is made and can't be overruled.
+
+```
+@staticmethod
+def get_max_salary():
+  return Employee.max_salary
+
+print("Max salary is " + str(Employee.get_max_salary()))
+Max salary 110000
+```
+
+The @staticmethod is called a decorator 
+
+When should we use one? When the task doesn't rely on instance level data. So it comes from a static or class level. If the data is for everything to do with the class rather than an instance you use the static method and that gives you access to the static property.
