@@ -34,3 +34,41 @@ So diagram is like
 |+Salary|
 | |
 |+PaySalary()|
+
+From there can set up different employees, and set them up with the various attributes (Name, Ni Number, Salary etc). And then with the method, we would use the PaySalary method with each of the objects.
+Idea is a method can manipulate or use the field data of the object. Stored procedure concept probably falls down a bit, as it's almost like a toolset of stored procedures, where you create something with top line parameters and then could use all different types of methods with those parameters to perform different things.
+
+|Term|Definition|
+|---|---|
+|Classes| a blueprint or template that defines the structure and behaviour of objects|
+|Objects| an instance of a class, representing individual entities with their own unique data and behaviour|
+|Methods| a function that is associated with an object of a particular class|
+|PRoperties| the data held by an object|
+
+__init__ is a constructor. It's the first method that gets called. It's the first thing that is defined and sets up your instance. self creates an instance. Instance of whatever it is we're using, so we're using a class. Passing in an instance of self, passing in key attributes, then make, model, year, colour
+
+class Car:
+  def __int__(self, make, model, year, color):
+    self.make = make
+    self.model = model
+    self.year = year
+    self.colour = colour
+    self.engine_status = False
+
+  def start_engine(self):
+    if not self.engine_status:
+      print("Starting the engine...")
+      self.engine_status = True
+      print("Engine is now running.")
+    else:
+      print("Engine is already running.")
+# Creating a car object
+my_car = Car("Toyota","Corolla",2022,"Blue")
+
+# Starting the engine of the car
+my_car.start_engine()
+
+So the self thing I think is becuase we are referencing the self, so when it's used, it'll make an instance, and that instance will reference itself.
+Then we make my_car, which is an instance of the car class. That will then inherit the method that was defined in the class.
+
+Notice at the top that the parameters in brackets are for all the values that don't have a default. engine_status is given a default of false, so it is optional in the top and does not need to be included in the brackets.
