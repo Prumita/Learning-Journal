@@ -48,3 +48,98 @@ Looks like
 
 Series dictates the order, index needs to match it. I mean, they just need to match eachother don't they really.
 
+Pandas is cool, it can read things in different formats.
+
+csv
+
+```
+df_csv = pd.read_csv('data.csv')
+
+print(df_csv.head())
+```
+
+And basically you can swap the above for excel or json too.
+
+```
+import pandas as pd
+import sqlite3
+
+# Connect to the SQL database
+conn = sqlite3.connect('database.db')
+
+# Reading data from a SQL table
+query = 'Select * from table name'
+df_sql = pd.read_Sql(query, conn)
+
+#Display the dataFrame
+print(df_sql.head())
+
+```
+
+head() and tail() let us define how many of the first or rows to display. I think you can put a number in the brackets to dictate how many reuslts to return. Can be used without though, so it'll just return...not sure what without a number, so it's just the first few.
+
+### Understanding the Structure of Data
+
+The describe() method generates statistical summaries of the DataFrame.
+
+This method provides measures like mean, median, standard deviation, and quartiles for numerical columns.
+
+#Generate statistical summary using describe()
+print(df.describe())
+
+You get back:
+- count
+- mean
+- standard deviation
+- minimum
+- 25 %
+- 50 %
+- 75 %
+- max
+
+  I can't remember the statistics anymore but it's like from the mean is it?
+
+  Data filtering
+
+  import pandas as pd
+
+  #Sample dataframe
+  data = {
+    'Name': [john alice bob emily david],
+    'Age': [25, 28, 22, 24, 27],
+    'City': ['New York', 'San Fransisco', 'Chicago', 'Los Angeles', 'Seattle']
+}
+  df = pd.DataFrame(data)
+
+  filtered_Date = df[df['Age'] > 24]
+  print(filtered_data)
+
+  Result
+
+  John
+  Alice
+  David
+
+  ## Sorting
+  sort_values()
+
+  sorted_Date = df.sort_values(by='Age', ascending=False)
+  print(sorted_data)
+
+  So with the above you get descending, by default it is ascending.
+
+  df.query('age > 30 and city == "London"')
+
+  Let's us query and filter the rows. Can also slice with .loc and .iloc . loc references column name, iloc references position.
+df.loc[df['age'] > 30, ['name', 'city']] # filtering rows based on where age greater than 30, then only returning name and city.
+df.iloc[0:10] # Returns first 10 rows, could put a comma and specify column by number position (o indexed)
+
+Some RegEx things, string expressions!
+
+.str.contains()
+.str.startswith()/ .str.endswith()
+
+### Basic Data Transformations
+
+pandas supports various data transformation operations, such as adding or removing columns, renaming columns and converting data types.
+
