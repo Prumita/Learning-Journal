@@ -40,6 +40,8 @@ print(fruit_series)
 
 Looks like
 
+|Fruit|Amount|
+|-|-|
 |Apple|10|
 |Banana|15|
 |Orange|8|
@@ -143,3 +145,56 @@ Some RegEx things, string expressions!
 
 pandas supports various data transformation operations, such as adding or removing columns, renaming columns and converting data types.
 
+### Data wrangling
+
+Crucial aspect of data anlysis that involves cleaning, transforming and preparing data to make it suitable for analysis.
+
+data = {'Name': ['John','Mary', np.nan, 'Lee'],
+  'Age': [25, 30, np.nan, 28]}
+
+and it's gone. Sorry lost that bit.
+
+Can use duplicated() to get rid of duplicates.
+
+RegEx
+
+1. Characters: Literal characters (e.g., ‘a’, ‘1’, ‘$’).
+2. Metacharacters: Special symbols with specific meanings (e.g., ‘.’, ‘*’, ‘?’).
+3. Quantifiers: Specify repetition (e.g., ‘+’, ‘{3}’, ‘*’).
+4. Character Classes: Sets of characters (e.g., [a-zA-Z], \d).
+5. Anchors: Indicate position (e.g., ^, $).
+
+. (dot): Matches any single character.
+* (asterisk): Matches zero or more of the preceding element.
++ (plus sign): Matches one or more of the preceding element.
+? (question mark): Makes the preceding symbol optional.
+^ (caret): Indicates the start of a line.
+$ (dollar sign): Indicates the end of a line.
+Character classes (e.g., [a-zA-Z], \d): Define sets of characters.
+Metacharacters (e.g., \, |, (), {}): Have special meanings in regex.
+
+| Symbol |Meaning|
+|-------|------|
+|^|Start of input|
+|$| End of Input|
+|[A-za-z0-9]| range of characters|
+|\s| whitespace|
+|\w| word characters|
+|\. |. (dot) character|
+|. |any single character|
+|\D |a single NON-digit|
+|\S |NON-whitespace|
+|\W |NON-word characters|
+
+| Symbol |Meaning|
+|-------|------|
+|+ |One or more|
+|{5} |Exactly five|
+|{5,} |at least five|
+|? |One or none|
+|{2,5} |two to five|
+|{,5} |up to five|
+
+[A-Za-z]{2}\d{3}
+
+So eg CS229 would be valid here.
