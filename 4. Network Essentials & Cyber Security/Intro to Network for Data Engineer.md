@@ -270,3 +270,33 @@ Now 5.
 So together we have
 
 01101011.00001010.00000001.00000101
+
+### Automatic Private IP Addressing (APIPA)
+Sorry there is a lot of content here and I am maxing out on absorbtion.
+
+DHCP. Server. There are addreses.
+
+127 first block ip. Remember we said it was reserved?
+127 is the loopback address and is an diagnostic address. Used for diagnostic testing of the local TCP/IP installation. So if you can talk to yourself you can talk to you. So like a ping I think.
+
+Another fun address is 255.255.255.255. It is a broadcast address. If we send data to this ip address, all of the devices within that paticular network would receive it.
+
+### TCP/IP and UDP
+
+TCP uses IP, this is why they're named together but they are different. TCP is transmission control protocol. It uses IP. 
+
+TCP asks the questions (or answers?), how and how much? TCP has a handshake. Not only controls how the transmission of data is done, but also ensures the transmission is delivered. 
+
+UDP is big, it's bulkier than TCP so it's often used for audio and video.
+
+OSI has 7 layers
+
+Application
+PResentation
+Session
+Transport
+Network - IP
+Data link = MAC
+Physical Cable
+
+OSI is for diagnosis and efficiency. 
