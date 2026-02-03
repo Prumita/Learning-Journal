@@ -51,3 +51,33 @@ Literally a wall. Can have a firewall within the network. Definitely have firewa
 ### VPN Concentrator
 Come back to it later! He wants us to build a beautiful story.
 
+### Networking models
+How do we arrange our components to ensure they communicate? Two main ones:
+
+Peer - to - peer
+Client - server model.
+
+#### Peer to peer
+Used at home. All of the previously covered devices are spoken. Peer just means equal. We are together. Nobody controls anybody, but we share things, printer shares resources with the PC and so on. Important in peer to peer, there's no one device that is a controller. There is no centralised administration. No one determines when I should log in, no one determines when I should log out, how I should do it, no one is a controller.
+
+|Advanges | Disadvantages|
+-----
+|Easy ot set up| No centralised administration|
+|Scalable| Not as secure|
+|Lower cost| Limited reliability|
+|Used for simple tasks: transferring files and sharing printers| Slower performance|
+
+So this is not secure, there's no one in charge of who gets into here. So main reason for peer to peer is for exchange, it's for sharing. If I have 5 users, I don't have to attach a printer to each of them. Can have one printer and all will share the printer. I cannot control how much they print, how they print, no administration.
+
+#### Client/Server
+
+Client means, those who are using the environment. Might be devices, might be human, the ones that are being served.
+Server means, the entity that provides the service. Whatever that service might be.  Common services include:
+
+|Server Type| Description|
+----
+|Email|Email server runs email server software. Clients use client software to access email|
+|Web|WEb server runs web server software. Clients use browser software to access web pages.|
+|File|File server stores corporate and user files. The client devices access these files.|
+
+
