@@ -133,6 +133,7 @@ THe address we use is IPv4, for version 4. There is also v6, but v4 is what I'm 
 Total length is 32, but broken into 4 blocks. Each block is called an octet.
 |8|8|8|8|
 |-|-|-|-|
+
 So you have about 5 classes of the address blocks.
 |Class|Definition|First block values|Number of devices|
 |-|-|-|-|
@@ -166,9 +167,11 @@ So starting with 192, biggest umber to take from that is 128, so put a 1 there.
 |1||||||||
 
 192-128 leaves 64, so that can go in 64.
+
 |128|64|32|16|8|4|2|1|
 |-|-|-|-|-|-|-|-|
 |1|1|||||||
+
 Leaves 0, so that's the binary for 192.
 
 Try again, start with 203, again goes in 128.
@@ -214,3 +217,57 @@ He's moved off the notes but I hope that's good.
 
 Let's do another one.
 
+107.10.1.5
+
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|0||||||||
+107 is smaller than 128, so 0 there.
+
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|0|1|||||||
+
+107 bigger than 64, so 1 there. 107-64 = 43
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|0|1|1||||||
+43 is bigger than 32 so 1 there. 43 - 32 = 11
+
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|0|1|1|0|||||
+
+11 smaller than 16, so put 0.
+
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|0|1|1|0|1||||
+
+11 bigger than 8, so put 1. 11 - 8 = 3
+
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|0|1|1|0|1|0|1|1|
+
+Finishing up, 4 bigger so 0, 2 smaller than 3, so 1, 1 and 1, so 1.
+
+So that's 107. Let's do 10.
+
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|0|0|0|0|1|0|1|0|
+
+Now 1.
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|0|0|0|0|0|0|0|1|
+
+Now 5.
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|0|0|0|0|0|1|0|1|
+
+So together we have
+
+01101011.00001010.00000001.00000101
