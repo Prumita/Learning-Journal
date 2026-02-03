@@ -7,7 +7,7 @@ Tutor for this module: Peter Akanji
 3. Binary and hexadecimal numbers - a Data Engineer has to be able to read those!
 4. Modern networking practices
 
-## Basic Principles of Networks
+# Basic Principles of Networks
 
 Common network devices are:
 
@@ -113,3 +113,104 @@ Dashed line: Wireless
 There's not one type of cable. Cables are connectors but they are also medium.
 Consider a cable or a medium. So think like our roads, they are roads, but we have single carriageway, dual carriageway and motorway. 
 Type of cable that you use, whether you use copper, fibre optic (or even wireless connection), will depend on the amount of data to be conveyed within the network.
+
+# IP Addresses
+
+Sending data. So computers numbered 1 through 4 are sending to a switch, numbered 5. 
+If 5 wanted to send to 1-4, we could send a broadcast. So for example, need to do an update, could warn everyone to save work before shutdown.
+MAC Address is globally unique, it's the fingerprint of the card. MAC means Media Access Control.
+
+IP address is the address the device has because it belongs to the network. If it is static, permanent, then the administrator has allocated that address and decides to give it to you permanently. If it is dynamic, then every time you come online you might have a fresh ip address, that is called dynamic.
+Dynamic is more secure. So for example when you're staying in a building you always stay in the same room, vs every time you are in that building you change room, you're harder to find, so harder to hack.
+Some devices are constant, part of working tools, so their ip addresses remain the same. When it comes to users, client etc, dynamic is preferred.
+
+Switch has the detail of all the ip addresses that are connected to it. All data, we have the source address, and the destination address.
+
+How does the computer figure it out?
+Every device has an address in decimal. So it has the length of that address is 32 bits. Each of the sections is 8 bits.
+We put the address on the device. When you put the devie on the network you insert the address there.
+THe address we use is IPv4, for version 4. There is also v6, but v4 is what I'm used to seeing.
+Total length is 32, but broken into 4 blocks. Each block is called an octet.
+|8|8|8|8|
+|-|-|-|-|
+So you have about 5 classes of the address blocks.
+|Class|Definition|First block values|Number of devices|
+|-|-|-|-|
+|A|1st block, network address. Last 3 blocks is host address|1-126|16,777,214|
+|B|First 2 blocks, network address is. Last 2 blocks is what host will receive|128-191|65,534|
+|C|First 3 blocks is the network, last 1 block is host|192-223|254|
+|D| Mostly not used, for TV people? Multimedia people?|||
+|E| Reserved (tutor hasn't said, but maybe htis is military, top secret stuff??)|||
+
+Why is 127 skipped? it is reserved for something else.
+
+So mostly in the organisation they take between A, B and C.
+
+So how do we know what class of IP address is the typical device?
+Following the above table, check the value of the first block in the ip address. e.g.
+163.40.1.31 Class B (between 128-191)
+102.1.1.5 Class A (between 1 and 126)
+205.11.13.14 Class C (between 192-223)
+
+So how do you choose the class? It depends how many devices you want on your network, so you pick the class that will give you the appropriate number of devices. Again above table shows the number of devices the various classes can support.
+
+When you have an ip address you would usually put it in decimal. So when you say 192.168.1.1 that is decimal. In 4 blocks, separated by dots.
+Need to know how to convert from decimal to binary. What is the binary representation of 192? What's the binary representation of 168? Of 1?
+
+So let's do a little 8 block table:
+So basically you get a number and you take the biggest you can from it every time, and put a 1 when you can:
+
+So starting with 192, biggest umber to take from that is 128, so put a 1 there.
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|1||||||||
+
+192-128 leaves 64, so that can go in 64.
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|1|1|||||||
+Leaves 0, so that's the binary for 192.
+
+Try again, start with 203, again goes in 128.
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|1||||||||
+
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|1||||||||
+203-128 = 75. So that goes into 64 too.
+
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|1|1|||||||
+
+75-64 = 11. So that's bigger than 8.
+
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|1|1|||1||||
+
+11-8 = 3:
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|1|1|||1||1||
+
+3-2 = 1
+|128|64|32|16|8|4|2|1|
+|-|-|-|-|-|-|-|-|
+|1|1|0|0|1|0|1|1|
+
+And 1-1=0, so we have our final binary number.
+
+Another way to express this is
+
+1x2^7 + 1x2^6 + 0x2^5 + 0x2^4 + 1x2^3 + 0x2^2 + 1x2^1 + 1x2^0
+
+So that becomes:
+128 + 64 + 0 + 0 + 8 + 0 + 2 + 1
+
+He's moved off the notes but I hope that's good.
+
+Let's do another one.
+
