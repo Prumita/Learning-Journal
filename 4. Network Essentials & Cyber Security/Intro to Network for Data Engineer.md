@@ -80,4 +80,36 @@ Server means, the entity that provides the service. Whatever that service might 
 |Web|WEb server runs web server software. Clients use browser software to access web pages.|
 |File|File server stores corporate and user files. The client devices access these files.|
 
+So the server becomes the controller. Thinking a restaurant, the server there is in control of the table. A good restaurant will make sure that the server is empowered to serve the table very well. Not going all over the place, only have 3 tables that they are serving, but they are serving those 3 tables really well. Other tables are fighting? Not their business. Ensures what they are responsible are well taken care of. 
 
+Security is the main reason for this, need to have control. 
+
+## Network components
+
+How to read topology, how to read a network map.
+
+Wireless Router
+Well we know what a router is, lets the networks talk to eachother. this one is wireless.
+
+LAN Switch
+Local Area Network. In your home you have your own LAN, can be small or big. Can have LAn with 5 devices, or 500. It's a switch, so it's managing and distributing data within that LAN.
+
+Router
+This would be a physical or cabled router. Not wireless, so connected physically by cable.
+
+Multilayer Switch
+Will look at this one more later on. Advanced set up for data engineering world.
+It means it's a switch that coordinates LANs together. For multi-LAN apparently.
+
+Firewall Appliance
+There are different ways of establishing firewalls. Firewalls that are like devices. Like a lock.There are also firewalls that are software based. Different firewall, different way of thinking.
+
+Not an architect, don't need to learn the complexity of the map.
+
+Also need to be aware of connectors. 
+So in topology:
+Solid line: Cable
+Dashed line: Wireless
+There's not one type of cable. Cables are connectors but they are also medium.
+Consider a cable or a medium. So think like our roads, they are roads, but we have single carriageway, dual carriageway and motorway. 
+Type of cable that you use, whether you use copper, fibre optic (or even wireless connection), will depend on the amount of data to be conveyed within the network.
