@@ -17,4 +17,4 @@ So in the old days, we had 2 lunch boxes. Those 2 lunch boxes sat in 2 completel
 So instead someone said, just take those 2 lunch boxes, make sure they're sealed so nothing can spill out, and put them in the same building, on the same shelf. Suddenly they can talk to eachother much better. Also they're in the same space, so there's just one space to maintain and they'll keep in sync better.
 
 
-![Container_vs_VMs](https://raw.githubusercontent.com/Prumita/Learning-Journal/main/5.3_Container_vs_VMs.png)
+![Container_vs_VMs](https://github.com/Prumita/Learning-Journal/blob/main/Screenshots/5.3_Containers_vs_VMs.png)
