@@ -141,3 +141,14 @@ Lost the anaogy a bit....but the water cooler looks like a database in the pictu
 I think basically the crawler helps kinda do indexes (cataloguing) so people can then find what they want.
 There's 'lake formation' in AWS land, and there's a librarian with a set of keys stood in front. All relates to everything that needs to happen in the lab....whoop.
 
+Metadata cataloguing. 
+So we know lots about this, but one I dont' think about very often is the freshness. How recent is that data.
+Oh we're in an NHS example of AI generated images now.
+So, I'm a person, I talk to the NHS. When I do, GP, Pharmacy or whatever, someone needs to know my full medical history. Not just my reuslts.
+Need a full record, but then there's where it exists, who owns it, who is allowed to access it etc.
+So there's the store, the patient data stuff, liek xrays and things. Not blood test reuslt sbecause they would be soemwhere else?
+MEtadat service, hospital/admin layer, your new Gp would register you. 
+Metadata Ingestion - That's evrey touch point that would update a record. So any apointment, result, perscription, the metadata ingestion is needed here. Can't rely on a manual update.
+Leads to a visualisation can search histories, allergies, etc.
+
+
