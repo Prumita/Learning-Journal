@@ -61,3 +61,23 @@ APparently just like CRUD. Create, Read, Update, Delete? Guess that's what they 
 
 So with OFGEM for instnace. Your usbmission intake for contractors receives post requests from suppliers. Or Leeds council, have a citizens app and they would send get requests to read planning data. They don't have write access. Get it and read it, but they can't write to make changes. What rest means, it means representational state trends. Let's focus on what it means in practise.
 Going to start our practical application apparently when we return from the break! Dunno if I believe that.....
+
+
+## Practical application - we hope
+So Food Hygeine Rating Schema API! That's cool! I like that.
+
+So API request seems to have a header and then data or something?
+SO there's 2 elements, header and request. THe header says how you want it, the request says what you want. So in the example we have:
+
+Header
+- Language: English
+- Format; JSON
+- Version: V2
+
+Request
+Get - today's specials
+Post - add new booking
+
+So we're saying we want today's specials and also to add a booking, and we're doing that in English, via JSON, and I guess on v2 of the API? Not sure where the version applies.
+
+
