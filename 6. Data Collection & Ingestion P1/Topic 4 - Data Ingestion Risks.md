@@ -32,5 +32,15 @@ These include:
 - Ingested data having licencing restrictions that changed or are not properly managed
 - Upstream schema changes breaking downstream systems and metadata becoming stale
 
+## Troubleshooting Practical
+
+Okay so I've got her on the left, me on the right, notes on my other screen, let's do this.
+
+It opens with a little top header, so we have ingestion risks. I typed them out above. We're going to talk about those, and this ntoebook is going to put me in the seat of trying to figure out what's going on. When a pipeline breaks, the SLA only specifies the timelines and escalation. It's not going to tell you what the problem is.
+
+So there's 4 python mistakes below, and they map to the 9.
+
+I did the first one, it was a suddenly missing email. We put a 'no email present' backup value when there was no email.
+
 
 
