@@ -50,3 +50,12 @@ Big Data and Real-Time Processing
 | Definition | Managed, real-time data ingestion service. | Managed event routing service. |
 | Use cases | Telemetry ingestion, log collection, real-time analytics, big data pipelines | Serverless applications, workflow automation, event integration |
 | Key Features | - Supports AMQP 1.0 and Kafka protocols.<br>- Partitioning and offset management.<br>- Capture feature for storing data in Azure Blob Storage or Data Lake. | - Low latency event delivery.<br>- Advanced filtering and routing.<br>- Supports custom events and integrates with Azure services. |
+
+## Comparing Azure Event Hubs with Kafka
+
+| Feature | Kafka | Azure Event Hubs |
+|---|---|---|
+| Management | Self-managed clusters, infrastructure provisioning and maintenance | Fully managed service, abstracts cluster management complexities |
+| Protocol support | Uses its own protocol; extensive client libraries | Kafka-compatible endpoint; no client code changes needed |
+| Ecosystem and integration | Rich ecosystem with many connectors and community support | Deep integration with Azure services; may have limitations outside Azure |
+| Scalability | Highly scalable with fine-grained performance control | Scales automatically with less control over infrastructure |
