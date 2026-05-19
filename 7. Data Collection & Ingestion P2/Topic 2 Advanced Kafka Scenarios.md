@@ -45,9 +45,8 @@ Cloud companies realise that companies struggle to use Kafka by thsemelves. So K
 
 Big Data and Real-Time Processing
 
-------------
- Comparison | Azure Event Hubs | Azure Event Grid |
------------
- Definition | Managed, real-time data ingestion service. | Managed event routing service |
- Use cases | Telemtry ingestion, log collection, real-time analytics, big data pipelines | Serverless applications, workflow automation, event integration |
- Key Features | - Supports AMQP 1.0 and Kafka protocols. - Partitioning and offset management. - Capture feature for storing data in Azure blob storage or data lake. | - Low latency event delivery. - Advanced filtering and routing - Supports custom events and integrates with Azure services.|
+| Comparison | Azure Event Hubs | Azure Event Grid |
+|---|---|---|
+| Definition | Managed, real-time data ingestion service. | Managed event routing service. |
+| Use cases | Telemetry ingestion, log collection, real-time analytics, big data pipelines | Serverless applications, workflow automation, event integration |
+| Key Features | - Supports AMQP 1.0 and Kafka protocols.<br>- Partitioning and offset management.<br>- Capture feature for storing data in Azure Blob Storage or Data Lake. | - Low latency event delivery.<br>- Advanced filtering and routing.<br>- Supports custom events and integrates with Azure services. |
