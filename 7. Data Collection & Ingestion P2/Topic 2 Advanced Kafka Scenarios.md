@@ -56,6 +56,18 @@ Big Data and Real-Time Processing
 | Feature | Kafka | Azure Event Hubs |
 |---|---|---|
 | Management | Self-managed clusters, infrastructure provisioning and maintenance | Fully managed service, abstracts cluster management complexities |
-| Protocol support | Uses its own protocol; extensive client libraries | Kafka-compatible endpoint; no client code changes needed |
+| Plkkkkkkkkkkkkkkkkkkk,krotocol support | Uses its own protocol; extensive client libraries | Kafka-compatible endpoint; no client code changes needed |
 | Ecosystem and integration | Rich ecosystem with many connectors and community support | Deep integration with Azure services; may have limitations outside Azure |
 | Scalability | Highly scalable with fine-grained performance control | Scales automatically with less control over infrastructure |
+
+If you're already using databricks, Power BI, Azure storage, people might choose to continue with Azure Event Hubs. But of course we picked GCP....so yeah.
+
+## AWS and GCP comparisons
+
+| Servive | Definition | Feature|
+|---|---|---|
+|AWS Kinesis | Scalable and durable real-time data streaming service | Real-time data ingestion; custom development needed for complex processing|
+|AWS SNS| Pub-sub messaging service| Simplifies message distribution to multiple subscribers|
+|AWS SQS| Message queuing service | Decouples components, ensuring reliable message delivery|
+|GCP Pub/Sub| Global, scalable messaging service|At-least-one delivery, message ordering, integration with GCP services.|
+  `
