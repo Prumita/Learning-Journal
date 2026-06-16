@@ -1,0 +1,66 @@
+So doing a carry on of last week's task where we see what's different to between the UK and French version.
+So the header in french version is over 2 lines.
+Middle initials either missing or not in the same
+Gender in different format, longform in UK, single letter in French
+Telehpne number broken apart
+What currency is the salary in?
+DOB is yy-mm-dd in french
+DOB is dd/mm/yy in UK
+
+Stakeholder answers to your questions
+
+Really strong questions btw!!! 
+
+1. Confirm the English meaning of each column and how it maps.
+
+I'm not going to map the whole file; that's the engineering job, and most of these you can work out or look up. What I'll do is settle the ones you genuinely can't resolve. So tell me: which specific columns are actually ambiguous, versus the ones you've already worked out?
+
+2. Confirm the currency of each salary column.
+Yes, that's our French office's payroll, so it's in euros, and it's what they're paid each calendar month. That's confirmed. The interesting question is what you do with that next to your pound figures?
+
+3. Is DdN yy-mm-dd? Is 16-10-01 → 2016, 1916, or something else?"
+excellent question
+
+ honestly I couldn't tell you the century for every row off the top of my head, that's a real gap in the raw data. But there's another column in that same file that lets you work it out for each person. Which one, and how would you use it?
+
+4.What values should be treated as missing/null?Where you see 'vide' or a bare dash '-', treat those as empty . But check the salary column, there's an 'na' in there. Before you blanket that as null: what's the difference between 'we don't know this person's salary' and 'this person doesn't have one'? Which is this, and how would you find out rather than assume?
+
+5. How should BAC+ map to UK RQF levels?
+
+yes BAC+ is the French education system, and it does line up with the RQF levels you're already using for the UK data, so it goes in the same column on the same scale. I'm not going to read you the table though, these are publicly defined equivalences. Pull up the RQF levels, line them against the French qualifications, and share your mapping with me and the group. If one's genuinely unclear, highlight the row and we'll settle it
+
+6. Confirm salary format, EUR alongside GBP, or convert to one currency?"
+
+Format's confirmed: euros, per calendar month, written the French way; point as the thousands separator, comma for the decimal, so '2.500,50' is two-and-a-half thousand euros. That parsing is on you. The EUR-vs-convert question, though....now, that's a design call, and I want your recommendation with a reason, not me deciding for you. Talk it through with your group - write it out in your notes if you like
+
+7. The DOB-vs-Age inconsistencies: Sacha (DOB 08-11-02, age 16), Adèle (DOB 16-10-01, age 108)
+
+Brilliant, you've found exactly why I gave you both columns. Work it out..... Sacha: DOB reads 08-11-02, age 16. If that DOB is 2008, how old is she now?"
+
+2008..... ~16. So for Sacha the century is 2008, and age confirms it.
+
+Now Adèle: DOB 16-10-01, age 108. If you read that as 2016, she's a toddler, but age says 108. If you read it as 1916, she's… 108. So which century does the age force here?"
+
+use Âge to resolve the century
+
+8 Strip all spaces and store the phone number as a continuous string '0326805240'?
+
+Storing it as a string not a number; yes, good instinct, tell me why you'd never store a phone number as an integer." On stripping the spaces, that's a normalisation call, and it's reasonable. Before you commit: are those spaces ever meaningful, or purely cosmetic? And whatever you decide, UK and French numbers, same rule for both?
+
+9. Do accented characters need to be kept? (VARCHAR vs NVARCHAR)
+you connected a data decision to a storage-type decision- great question!! 
+
+That's exactly the right link to make; these are people's actual names: é, è, ç. Are you comfortable storing 'André' as 'Andre'? And if the answer's no, what does that force about your column type and your file encoding?
+
+10.
+Any need to map BAC+ to a standard UK/Global equivalent? Ask yourself what the column is for. The business wants to compare workforce across both countries; can they do that if French rows say 'Master' and UK rows hold an RQF number? So yes, map it onto the scale you're already using, so both countries sit on one comparable measure. Whether you also keep the original French term alongside is your call, what's the argument for hanging onto it?
+
+11. 
+If the French file is monthly, should the reporting cadence be monthly too? A daily report would show partial figures, then jump when French data lands.
+i think this is one of the best questions you asked; it's a step above schema-level thinking; they've spotted a data-freshness problem.
+
+ That's not a schema question, that's a data-engineering judgement, and it's exactly the skill this exercise aims to build. You've spotted that two sources arriving on different cadences will make a combined daily report misleading. So, what are your options?"
+
+Could you label each figure with how fresh it is - 'UK to today, France to end of last month'?
+Does the business actually need France daily, or is monthly fine for that slice?
+Whose decision is the reporting cadence; yours, or theirs? What would you take to them?
