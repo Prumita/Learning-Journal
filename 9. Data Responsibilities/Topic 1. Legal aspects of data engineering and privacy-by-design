@@ -1,0 +1,217 @@
+we've done lots of activites relating to GDPR, I'll grab the notes we've made in a mo.
+
+Oh heck I'm definitely about to lose all my notes because of being put in a different group...
+
+Not my notes but actually they're beautiful so I've pinched them:
+
+Activity 1 (20 mins):
+Match GDPR principles to real-world examples.
+Activity 2 (20 mins):
+Scenario-Based Discussion: Addressing legal challenges in data engineering.
+Activity 3 (25 mins):
+Case Study Analysis: Identify privacy gaps and suggest solutions.
+Activity 4 (25 mins):
+Design a privacy-by-design framework for a new app.
+Activity 5 (25 mins):
+Integrate privacy features into a sample project.
+Activity 6 (25 mins):
+Evaluate privacy tools and frameworks using multi-criteria scoring.
+
+Please download the Brief for each activity
+
+----------------------------------------------------------------------------------
+
+Group Discussion Feedback
+
+Activity 1 (20 mins):
+Match GDPR principles to real-world examples.
+
+Answers: 
+A: •	Lawfulness, Fairness, and Transparency
+B: •	Storage Limitation
+C: •	Data Minimization
+D: •	Accuracy
+E: •	Integrity and Confidentiality (Security)
+F: •	Purpose Limitation
+G: •	Accountability
+
+
+----------------------------------------------------------------------------------
+
+
+Activity 2 (20 mins):
+Scenario-Based Discussion: Addressing legal challenges in data engineering.
+
+1.	Identify and discuss the specific legal challenges presented in the scenario.
+a.	Consider GDPR principles such as lawfulness, transparency, and accountability.
+Lawfulness, Fairness, and Transparency - data is pre-GDPR compliant so may not have the required valid lawful basis, nor have the transparency required to share the data
+Accountability - the marketing agency remains accountable, even if they choose to use a third party tool
+
+
+b.	Analyse risks related to third-party data sharing.
+    Risks include breach of confidentiality and security
+    Lack of security guarantees and insufficient data processing agreements
+    International data transfer risks
+    Loss of customer trust
+    Possible sharing of data without lawful basis
+
+2.	Propose solutions to address these challenges.
+a.	How can the agency ensure GDPR compliance while using the analytics tool?
+
+Conduct a data protection impact assessement (DPIA)
+Consider whether third party can provide the necessary guarantees to make the tool GDPR compliant - reconsider use if not
+Agency should verify that third party tool has a clear privacy policy and retention policies
+
+
+b.	What processes can be implemented to ensure customer data security and privacy?
+
+Regular reviews of third 
+Encryption (At rest) and TLS (In transit) 
+
+c.	How can the agency communicate effectively with customers to rebuild trust?
+
+Updated Privacy Notice to customers
+
+----------------------------------------------------------------------------------
+
+
+Activity 3 (25 mins):
+Case Study Analysis: Identify privacy gaps and suggest solutions.
+Discussion Points
+1.	Identify the privacy gaps and ethical concerns in Facebook's data practices.
+Consider consent, transparency, and data security policies.
+
+No valid user consent
+Lack of transparency over the scope of the data collection, e.g. it captured data from friends as well as the user
+Lack of accountability as shown by the delay in addressing it and failing to verify deletion
+Systemic data issues with the API allowing broad access without consent
+Weak third party controls
+
+
+2.	Propose actionable solutions to mitigate such risks in the future.
+a)	What changes could Facebook have implemented to comply with privacy laws?
+
+Apply data minimisation - only collect data required (no need for friends data)
+Increase transparency 
+Use principle of least privilege - restricting API permissions 
+Improve incident response - investigation straightaway, infoming users, notify regulators, verify deletion of data etc
+
+b)	How could privacy-by-design principles have prevented this issue?
+
+Purpose limitation - quiz used only for personality results not politial profiling
+Strong Access control 
+Audit logging - help detect misuse much earlier
+
+
+3.	Suggest strategies for rebuilding user trust and preventing future breaches.
+
+Privacy training - training developers in GDPR, privacy by design and ethical use of data
+Stronger secuirty with encryption, API montoring etc
+Better user control 
+Independant audit
+-------------------------------------------------------------------------------------
+
+Activity 4
+What is a Framework?
+A framework is a structured plan or system that outlines specific actions, policies, and technologies to address a particular goal - in this case, ensuring privacy. It includes:
+•	Features: The tools and technical measures to ensure data privacy (e.g., encryption).
+•	Policies: The rules or practices for how data is handled, accessed, and stored.
+•	Compliance: Steps to meet legal and ethical standards.
+•	Presentation Tips: Clearly organise your framework into sections for features, policies, compliance, and alignment with user needs. Use bullet points or a flowchart for clarity.
+Task:
+•	Review the scenario below about a mobile health app.
+•	Identify key privacy considerations and challenges.
+•	Collaboratively design a privacy-by-design framework.
+•	Summarise your framework in a visual format (e.g., bullet points, table, or diagram) and prepare to present it in 2 minutes to the class.
+
+Time Allocation:
+•	20 minutes: Collaborate and design your framework.
+•	5 minutes: Summarise and present your framework.
+Scenario
+Title: Privacy-by-Design for a Mobile Health Application
+Your team has been tasked with designing a privacy-by-design framework for a mobile health app, "HealthSync," that tracks users' fitness, diet, and medical records. The app collects sensitive personal data such as heart rate, calorie intake, and medical history, which it shares with healthcare providers to improve user health outcomes.
+Key challenges include:
+1.	Protecting sensitive health data from unauthorised access or breaches.
+2.	Ensuring user consent for data collection, sharing, and usage.
+3.	Maintaining compliance with GDPR and HIPAA requirements.
+4.	Balancing data minimisation with providing comprehensive health insights.
+The framework must include:
+•	Privacy features (e.g., encryption, user controls).
+•	Organisational policies for data governance.
+•	Strategies to align with user and regulatory requirements.
+Discussion Points
+1.	What privacy features can be implemented in the app to protect user data?
+Consider anonymisation, encryption, and role-based access.
+2.	How will user consent be obtained and managed?
+Propose a mechanism for obtaining and updating consent.
+3.	How will the framework ensure compliance with GDPR and HIPAA?
+Identify specific organisational policies and best practices.
+4.	How will you ensure data minimisation while delivering useful insights?
+Explore strategies for collecting only necessary data.
+
+
+Features
+Encrypted end to end and at rest.
+User roles, least priviledge approach.
+Detailed logs of every person who views/edits info (documentation and accountability)
+Users can opt in to what is collected to ensure minimisation, set up at sign up and can be amended in profile at any time.
+
+
+
+Policies
+Highly confidential data treated as such. anonymised if needed for aggregate views, analytics etc. 
+Only shared with healthcare providers with user consent.
+Data governance
+retention
+breach management
+staff training
+
+Compliance
+Transparently communicate what is collected and how it would be used in privacy notice
+GDPR
+HIPAA
+DPIA assessments
+consent management
+------------------------------------------------------------------------------------------------
+Activity 5
+What are Privacy Features? 
+Privacy features are tools and techniques designed to protect sensitive data, ensure compliance with regulations, and uphold user trust. These include: 
+•	Data Minimisation: Only collecting and storing the data strictly necessary for a task. 
+•	Secure Processing: Using measures like encryption, access control, and regular audits to safeguard data. 
+•	Practical Integration: Embedding these features into applications during design and implementation stages.
+
+Task:
+•	Review the sample project scenario below. 
+•	Identify which privacy features are needed to meet the outlined requirements. 
+•	Propose changes or additions to integrate these features effectively. 
+•	Document your recommendations and present them to the class. 
+ 
+Time Allocation: 
+•	20 minutes: Collaborate and design privacy integrations. 
+•	5 minutes: Present your recommendations to the class. 
+  
+Scenario 
+Privacy Enhancement for an E-Commerce Platform 
+
+Your team has been asked to enhance privacy in a sample project: an e-commerce platform called "ShopSecure." This platform collects user data such as names, addresses, payment details, and shopping preferences. Recent feedback and audits highlight concerns about data security and regulatory compliance. 
+
+Challenges include: 
+
+•	Storing sensitive payment information securely. 
+•	Allowing users to control their data, including the ability to delete accounts. 
+•	Ensuring compliance with GDPR and PCI DSS standards. 
+
+The solution must include: 
+•	Data minimisation techniques for storing customer information. 
+•	Secure processing features for handling sensitive payment data. 
+•	User-centric controls for data access, modification, and deletion. 
+  
+Discussion Points 
+
+1.	What steps can be taken to minimise the collection of sensitive data? Explore the use of pseudonymisation and just-in-time data requests. 
+    Use just in time data requests so there's a log of every time anyone has accessed sensitive data, and so it is short-term and access is restricted by default.
+2.	How can you ensure payment data is securely processed and stored? Consider encryption standards, such as TLS and AES, and secure tokenisation. 
+ensure data remains secure at all stages from collection to deletion using encryption standards such as TLS
+3.	How can the platform provide users with control over their data? Suggest features like account dashboards, one-click account deletion, and privacy notices. 
+
+
