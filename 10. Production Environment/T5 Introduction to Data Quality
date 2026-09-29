@@ -1,3 +1,49 @@
 Cover. Stephen Stead.
 
-Nearly every data has had some sort of data quality issue with it.
+Black Box testing - put a set of inputs into a code and you get a set of outputs. You don't know what's happened in between, but the testing is 'for this set of inputs, I should see this set of outputs'. Don't care what's going on in between, just care about results.
+White box testing - Care about what happens. Check all the changes, check everything that happens as it goes through. White box testing, check all bits in the system. Like me testing every individual SAS step back in the old days.
+
+Unit testing is very often white box testing, so checking everything. Check things work in all circumstnaces etc
+- Normal values
+- Extreme values
+- Broken values, various types of fault and make sure it correctly rejects when it hits an exception.
+
+Requirements document being generated and then giving it to the end user community to run acceptance tests. World will have moved on. Requirements document will have moved on compared to current business needs. May be things they realise that they need when compared to the system. Can have a system pass system testing, but then in the hands of users, well this is no use it doesn't do this. Could be a new requirement, or that the world has changed and consequently things are different.
+
+
+Real world case study
+
+AirBnb Data Infrastructure
+Slide 3 of pack.
+Hive is a data warehouseing language that allows you to do processing of large quantities of data which are typicall sat on Hadoop cluster. 
+Hadoop is quite clever, can install Hadoop cluster on your laptop.
+Gets a virtual box, then installs Ubuntu VM, then adds HAdoop, and runs it in pseudo distributed mode.
+Ubuntu is a straight forward and resilient linux distro. A lot of things run on it quite happily including hadoop.
+Can try using Cali or something? I've no idea how this relates to change management.
+pseudo distributed mode pretents there are 4 or 5 different machines, so that each of the servies can run independently and talk to eachother over TCPIP, so they behave like they're distributed across multiple machines, but actually they're just in different stacks on one machine, and talking through loopback ports. Can see all processes running and interactions correctly, without actually needing multiple virtual machines.
+
+## Every change is a hypothesis
+
+From hope to proof
+
+- Every change is a testable hypothesis
+- Change management = control + validation + rollback
+- Move from hope to proof
+
+We do a bluegreen deployment, if new version doesn't work, just stop using it and fade it out. Might tentatively put a new version of a service into operation, monitor them to make sure they're doing what they should do. Most of the instances are in service of the old version. When we're convinced that the new version is good we can up the number of instances of the new version. Gradually decrease the number of instances of the old version.
+
+## Quality assurance as a safety net
+Layered tests
+- Unit
+- contract
+- Integration
+- Acceptance
+
+Chaos monkey! 
+Netflix use AWS. When you start watching a film you're allocated a stream off a server that's sending your local device hte movie. What they have is this background process that goes around and kills the services? PIcks up failed service, 
+Recovery is faster than buffering. Randomly do it to the services that are live running. The chaos monkey is a process that goes arund and kills other processes at random, to make sure that the recovery environment works correctly. Makes sure that what you think will happen actually happens.
+
+e.on have 3 data centres, 2 in germany and 1 in the UK. Configured so that one is primary, then secondary, then secondary secondary. In the event that the primary fails and they go to secondary, that secondary already has a secondary that's ready to go.
+Three tiems a year they go and deliberately fail the primary data centre, not gracefullly, they destroy the primary data centre so that the secondary data centre takes over, and secondary secondary becomes a true secondary, and then the primary data centre is then reconfigured to be the secondary secondary. So the 3 data centre actually rotate throughout the year. That takes quality testing to the logical extreme. They know their systems work under failure conditions because they fail them 3 times a year.
+Need to test failures. Test bad data, to make sure the system gracefully handles that.
+
