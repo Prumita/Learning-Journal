@@ -47,3 +47,12 @@ e.on have 3 data centres, 2 in germany and 1 in the UK. Configured so that one i
 Three tiems a year they go and deliberately fail the primary data centre, not gracefullly, they destroy the primary data centre so that the secondary data centre takes over, and secondary secondary becomes a true secondary, and then the primary data centre is then reconfigured to be the secondary secondary. So the 3 data centre actually rotate throughout the year. That takes quality testing to the logical extreme. They know their systems work under failure conditions because they fail them 3 times a year.
 Need to test failures. Test bad data, to make sure the system gracefully handles that.
 
+### Fully structured data. 
+Understand what's happening before I look at the data. Got a data dictionary. cam understand the first record that I see because I already know what it looks like,
+### Semi structured data
+is where the data structure is wrapped into the data itself. So like xml. Look at xml record, don't know what the data structure is until I finish reading all the records in the datasource. Some records might have diffrent tags than others. Only once everything is read do we know what the full set is.
+### Quasi structured data
+Is where the data has structure but each record in it will be different. Pieces in it can be picked out and are easy to be picked out. A web servers log files. Each widget that is installed on the web server will emitting its own logs, in whatever format was designed for it. So lots of data, but different formats and different set ups. Over many different iterations of the same libraries and widgets, if you look at the logs overall they are very difficult to decipher and computationally very difficult to work on.
+Can pull out things we understand the shape of, so for example URL or domain names, using something like regex to recognise the sequence of characters that would define a URL.
+### Unstructured logs
+No structure at all, quite frequently dropped into an indexing environment using natural language processing to try and grab out whatever is in there. Look for particular keywords, try to classify things according to the prevelance of particular indicators, so like 'critical' or 'information', things will start to be used to determine wehther something worrying or not. A lot of people use Solr which is a free text indexing thing. 
