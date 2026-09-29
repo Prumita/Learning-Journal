@@ -56,3 +56,32 @@ Is where the data has structure but each record in it will be different. Pieces 
 Can pull out things we understand the shape of, so for example URL or domain names, using something like regex to recognise the sequence of characters that would define a URL.
 ### Unstructured logs
 No structure at all, quite frequently dropped into an indexing environment using natural language processing to try and grab out whatever is in there. Look for particular keywords, try to classify things according to the prevelance of particular indicators, so like 'critical' or 'information', things will start to be used to determine wehther something worrying or not. A lot of people use Solr which is a free text indexing thing. 
+
+## Designing for robustness
+
+- Design for failure, not perfection
+- Add redundancy, failover and circuit breakers
+- Automate recovery and rehearse it
+
+## Documentation that proves
+- Version-control all change records
+- Include rationale, impact and approvals
+- Keep docs current with continuous review
+
+## The change workflow
+- Understand, assess, document, plan, execute, close
+- Standardise the process to reduce risk
+- Use templates and checklists to stay consistent
+
+Understnad the architecture
+assess impact
+docucment the change request
+plan implementation
+execute and monitor
+close with evidence
+
+## Common pitfalls
+- Coverage theatre hides real gaps
+- Stale docs and missing rollback plans cause risk
+- Noisy alerts = ignored alerts
+
